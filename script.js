@@ -54,7 +54,7 @@ function stickers(i){
   return SPOTS[i % 4].map((p, k) =>
     `<span class="stk" style="left:${p[0]};top:${p[1]};animation-delay:${k*.8}s">${POOL[(i + k*3) % POOL.length]}</span>`).join('');
 }
-const img = i => `<div class="photo"><img src="${i+1}.jfif" alt="Memory ${i+1}" onerror="this.remove()"><span>♡<br>${i+1}.jfif</span></div>`;
+const img = i => `<div class="photo"><img src="${i+1}.jfif" alt="Memory ${i+1}" onerror="this.remove()"></div>`;
 
 /* ---------------- page templates ---------------- */
 function leftHTML(i){
