@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Love Story</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,600&family=Great+Vibes&family=Dancing+Script:wght@500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating hearts, stars & click effects are drawn here by script.js -->
+<div id="fx"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><radialGradient id="rg"><stop offset="0" stop-color="#EBDDFF"/><stop offset="1" stop-color="#A78BFA"/></radialGradient></defs>
+<symbol id="sprig" viewBox="0 0 50 150"><path d="M25 148 C21 100 29 50 25 6" stroke="#8E9F8A" stroke-width="2" fill="none"/><ellipse cx="18" cy="14" rx="4.5" ry="9" transform="rotate(-28 18 14)" fill="#C4B5FD"/><ellipse cx="25" cy="9" rx="4" ry="7" fill="#A78BFA"/><ellipse cx="32" cy="27" rx="4.5" ry="9" transform="rotate(28 32 27)" fill="#B79BF5"/><ellipse cx="25" cy="22" rx="4" ry="7" fill="#A78BFA"/><ellipse cx="18" cy="40" rx="4.5" ry="9" transform="rotate(-28 18 40)" fill="#B79BF5"/><ellipse cx="25" cy="35" rx="4" ry="7" fill="#A78BFA"/><ellipse cx="32" cy="53" rx="4.5" ry="9" transform="rotate(28 32 53)" fill="#C4B5FD"/><ellipse cx="25" cy="48" rx="4" ry="7" fill="#A78BFA"/><ellipse cx="18" cy="66" rx="4.5" ry="9" transform="rotate(-28 18 66)" fill="#B79BF5"/><ellipse cx="25" cy="61" rx="4" ry="7" fill="#A78BFA"/><ellipse cx="32" cy="79" rx="4.5" ry="9" transform="rotate(28 32 79)" fill="#B79BF5"/><ellipse cx="25" cy="74" rx="4" ry="7" fill="#A78BFA"/><ellipse cx="18" cy="92" rx="4.5" ry="9" transform="rotate(-28 18 92)" fill="#C4B5FD"/><ellipse cx="25" cy="87" rx="4" ry="7" fill="#A78BFA"/><ellipse cx="13" cy="118" rx="4" ry="12" transform="rotate(-50 13 118)" fill="#A9BFA5"/><ellipse cx="37" cy="126" rx="4" ry="12" transform="rotate(50 37 126)" fill="#A9BFA5"/></symbol><symbol id="rose" viewBox="0 0 100 100"><circle cx="74.0" cy="50.0" r="22" fill="url(#rg)" stroke="#fff" stroke-opacity=".6"/><circle cx="62.0" cy="70.8" r="22" fill="url(#rg)" stroke="#fff" stroke-opacity=".6"/><circle cx="38.0" cy="70.8" r="22" fill="url(#rg)" stroke="#fff" stroke-opacity=".6"/><circle cx="26.0" cy="50.0" r="22" fill="url(#rg)" stroke="#fff" stroke-opacity=".6"/><circle cx="38.0" cy="29.2" r="22" fill="url(#rg)" stroke="#fff" stroke-opacity=".6"/><circle cx="62.0" cy="29.2" r="22" fill="url(#rg)" stroke="#fff" stroke-opacity=".6"/><circle cx="50" cy="50" r="20" fill="#B79BF5" stroke="#fff" stroke-opacity=".6"/><circle cx="50" cy="50" r="12" fill="#9D7BF0"/><path d="M50 50 m-5 0 a5 5 0 1 1 5 5 a9 9 0 1 1 -9 -9" stroke="#fff" stroke-opacity=".7" stroke-width="1.6" fill="none"/></symbol></svg>
+
+
+<!-- 0. PASSWORD SCREEN (change the password in script.js: PASSWORD) -->
+<section id="lock" class="screen active">
+  <form id="lockForm" class="lock-card" autocomplete="off">
+    <div class="lock-icon">♡</div>
+    <h2>Our Love Story</h2>
+    <p class="lock-sub">This scrapbook is just for you.<br>Enter our secret code ♡</p>
+    <div class="dots" id="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <input id="pw" type="password" inputmode="none" maxlength="6" aria-label="Password">
+    <p id="pwMsg" class="pw-msg"></p>
+    <div class="keypad" id="keypad"><button type="button" class="key" data-k="1">1</button><button type="button" class="key" data-k="2">2</button><button type="button" class="key" data-k="3">3</button><button type="button" class="key" data-k="4">4</button><button type="button" class="key" data-k="5">5</button><button type="button" class="key" data-k="6">6</button><button type="button" class="key" data-k="7">7</button><button type="button" class="key" data-k="8">8</button><button type="button" class="key" data-k="9">9</button><button type="button" class="key key-del" data-k="del" aria-label="Delete">⌫</button><button type="button" class="key" data-k="0">0</button><button type="button" class="key key-clr" data-k="clr" aria-label="Clear">C</button></div>
+    <button type="submit" class="glow-btn">UNLOCK ♡</button>
+  </form>
+  <svg class="deco rose bl"><use href="#rose" width="100%" height="100%"/></svg><svg class="deco rose br flip"><use href="#rose" width="100%" height="100%"/></svg><svg class="deco sprig sbl"><use href="#sprig" width="100%" height="100%"/></svg><svg class="deco sprig sbr flip"><use href="#sprig" width="100%" height="100%"/></svg>
+</section>
+
+<!-- 1. OPENING SCREEN -->
+<section id="intro" class="screen">
+  <div class="closed-book" id="closedBook">
+    <div class="cover"><span class="cover-heart">♡</span><b>Our Love Story</b></div>
+    <div class="inner-pages"></div>
+    <svg class="deco cb-rose"><use href="#rose" width="100%" height="100%"/></svg><svg class="deco cb-sprig"><use href="#sprig" width="100%" height="100%"/></svg><svg class="deco cb-rose2"><use href="#rose" width="100%" height="100%"/></svg>
+  </div>
+  <h1>Our Love Story</h1>
+  <p class="sub">10 memories, countless feelings, and one love.</p>
+  <button id="openBtn" class="glow-btn">OPEN OUR SCRAPBOOK ♡</button>
+</section>
+
+<!-- 2. THE SCRAPBOOK (pages are filled in by script.js) -->
+<section id="bookScreen" class="screen">
+  <div class="book" id="book">
+    <div class="page left" id="leftPage"></div>
+    <div class="spine"></div>
+    <div class="page right" id="rightPage"></div>
+  </div>
+  <nav class="controls">
+    <button id="prevBtn" class="glow-btn small">PREVIOUS ♡</button>
+    <div class="meta"><span id="counter">MEMORY 01 / 10</span><div class="progress"><i id="bar"></i></div></div>
+    <button id="nextBtn" class="glow-btn small">NEXT ♡</button>
+  </nav>
+</section>
+
+<!-- 3. THE LOVE LETTER (edit the text below freely) -->
+<section id="letterScreen" class="screen">
+  <!-- Envelope: click it to open and reveal the letter -->
+  <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open the envelope">
+    <div class="env-back"></div>
+    <div class="env-flap"></div>
+    <div class="env-front"></div>
+    <div class="env-seal">♡</div>
+    <svg class="deco e-l"><use href="#sprig" width="100%" height="100%"/></svg><svg class="deco e-r flip"><use href="#sprig" width="100%" height="100%"/></svg>
+  </div>
+  <p class="env-hint" id="envHint">A letter is waiting for you... tap the envelope ♡</p>
+  <article class="letter">
+    <svg class="deco c-tl"><use href="#sprig" width="100%" height="100%"/></svg><svg class="deco c-tr"><use href="#sprig" width="100%" height="100%"/></svg><svg class="deco c-bl"><use href="#sprig" width="100%" height="100%"/></svg><svg class="deco c-br"><use href="#sprig" width="100%" height="100%"/></svg>
+    <div class="seal">♡</div>
+    <h2>My Dearest,</h2>
+    <p>Hindi ko alam kung paano ko sasabihin lahat ng nararamdaman ko, hindi kasi ako mahilig gumawa ng message diba? alam mo yan pero gagawin ko, simple lang pero galing sa puso ko, at ikaw ang laman ng bawat salita.</p>
+    <p>Habang binabalikan ko lahat ng memories natin na nasa little scrap book na ito, napapaisip ako kung gaano ako kaswerte na ikaw ang kasama ko. Ang dami nating simpleng araw na naging special dahil sa'yo. Ikaw yung nagpapatawa sa akin, yung nagbibigay saya sa mga araw ko, at yung taong gusto kong kasama sa lahat ng bagay.</p>
+    <p>Thank you sa patience mo, sa pagmamahal mo, at sa pag-intindi sa akin kahit minsan ang kulit ko, ang dami kong tampo, o hindi ako madaling intindihin HAHAHAHA. Kahit anong mangyari baby, gusto kong ikaw pa rin ang kasama ko habang hinaharap natin lahat ng bagay. Gusto kong sabay nating maranasan yung mga bagay na hindi pa natin nagagawa.</p>
+    <p>more dates, more tawanan, more tampuhan na susuyuin, more pictures, more random gala, more memories, at more years na ikaw at ako pa rin. Sana marami pa tayong birthdays, monthsaries, at ordinary days na magiging special dahil magkasama tayo.</p>
+    <p class="sign">iloveyousomush baby,<br>-baby♡</p>
+    <p class="final">Ikaw ang Palagi ko. ♡</p>
+    <button id="replayBtn" class="glow-btn">OPEN OUR SCRAPBOOK AGAIN</button>
+  </article>
+</section>
+
+<!-- Music toggle (music.mp3 is used if present, otherwise a soft built-in melody plays) -->
+<button id="musicBtn" class="music-btn" aria-label="Toggle music">♪ Music: ON</button>
+
+<!-- Memory viewer (opens when a photo in the overview collage is clicked) -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <div class="lb-card">
+    <button id="lbClose" class="lb-x" aria-label="Close">✕</button>
+    <div class="lb-photo" id="lbPhoto"></div>
+    <div class="lb-text" id="lbText"></div>
+    <div class="lb-nav"><button id="lbPrev" class="glow-btn small">♡ PREV</button><button id="lbNext" class="glow-btn small">NEXT ♡</button></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
