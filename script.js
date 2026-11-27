@@ -32,7 +32,7 @@ const MEMORIES = [
   { title:"A Little Cake, A Little Flower, A Lot of Love", date:"August 20, 2026", note:"simple but full of love ♡",
     story:"Birthday mo nung araw na to, may suprise me sayo na flower at cake nung araw na to, yun lang ang kaya ko nung araw na yon, lumabas tayo kumain tayo sa yeyis kahit sakto lang ang pera natin nung araw na yon HAHAHAH, short days natin pero isa sa mahalagang araw ang iyong birthday kaya ginawaan pa din natin ng paraan HAHAHAHAH, gumastos ka ng malaki nung araw na yon, nakakahiya kasi birthday mo tapos napagastos ka pa po.",
     msg:"Even with our little budget, I would always find a way to celebrate you." },
-  { title:"The Night I Made You Smile", date:"Today, and always", note:"love blooms even late at night",
+  { title:"The Night I Made You Smile", date:"September 28, 2026", note:"love blooms even late at night",
     story:"ito yung araw na kunwari aalis lang kami ni emman para samin pero nakaplano na kami ni emman na bumili ng mga bulaklak para saming bebe HAHAHAH, magtropa na parehas inlove HAHAHA, ang daming nangyari nung araw na to pero natuloy pa din kami makabili para saming mga bebe, pumunta kami dangwa upang madaming pagpiliin na flowers. hindi dapat sa araw na to ang pag suprise namin pero napag isipan namin na sa araw na yon na ibigay kahit gabi na HAHAAHAH, nai suprise kita mga 11 pm na non gabing gabi na talaga HAHAHAH.",
     msg:"The flowers were beautiful, but seeing your happiness was the best part." }
 ];
