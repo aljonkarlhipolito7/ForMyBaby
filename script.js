@@ -114,7 +114,7 @@ function go(dir){
 
 /* ---------------- password screen ----------------
    Change the code here. Music starts automatically once it is entered correctly. */
-const PASSWORD = '040726';
+const PASSWORD = '010126';
 $('#lockForm').addEventListener('submit', e => {
   e.preventDefault();
   const input = $('#pw'), card = $('#lockForm');
